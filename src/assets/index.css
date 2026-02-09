@@ -1,0 +1,7 @@
+.flex-container-direction {
+  flex-direction: column;
+}
+
+.flex-item {
+  flex-direction: row;
+}

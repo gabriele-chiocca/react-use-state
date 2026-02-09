@@ -3,7 +3,7 @@ export default function Button({ languages }) {
     <>
       {languages.map((language, index) => {
         return (
-          <div key={index} className="flex-item mx-2">
+          <div key={index} className="me-2">
             <button className="btn btn-primary">{language.title}</button>
           </div>
         );
