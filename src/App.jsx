@@ -56,7 +56,7 @@ export default function App() {
           />
         </div>
         <div>
-          <Paragraph languages={languages} />
+          <Paragraph languages={languages} activeItem={activeItem} />
         </div>
       </div>
     </>

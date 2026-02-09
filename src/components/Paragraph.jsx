@@ -1,16 +1,15 @@
-export default function Paragraph({ languages }) {
-  if (!languages && ) return null;
+export default function Paragraph({ languages, activeItem }) {
+  if (!languages && !activeItem) return null;
 
   return (
     <>
       {languages.map((language, index) => {
-        return (
+        if (language.id !== activeItem) return null;
 
-          <div key={index} className="mt-2">
+        return (
+          <div key={language.id} className="mt-2">
             <p>{language.description}</p>
           </div>
-
-
         );
       })}
     </>
