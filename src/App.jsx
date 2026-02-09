@@ -42,7 +42,7 @@ const languages = [
 ];
 
 export default function App() {
-  const [activeItem, setActiveItem] = useState(0);
+  const [activeItem, setActiveItem] = useState(1);
   console.log(activeItem);
   return (
     <>
@@ -52,6 +52,7 @@ export default function App() {
           <Button
             languages={languages}
             toggleItem={(id) => setActiveItem(id)}
+            activeItem={activeItem}
           />
         </div>
         <div>
