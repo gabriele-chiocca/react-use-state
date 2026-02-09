@@ -1,7 +1,9 @@
 export default function Paragraph({ languages, activeItem }) {
   if (!activeItem)
     return (
-      <h2 className="bg bg-danger p-5 mt-5">Nessun elemento selezionato</h2>
+      <h2 className="bg bg-secondary p-5 mt-5 text-light rounded">
+        Nessun elemento selezionato
+      </h2>
     );
 
   return (
