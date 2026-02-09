@@ -42,7 +42,7 @@ const languages = [
 ];
 
 export default function App() {
-  const [activeItem, setActiveItem] = useState(1);
+  const [activeItem, setActiveItem] = useState();
   console.log(activeItem);
   return (
     <>
