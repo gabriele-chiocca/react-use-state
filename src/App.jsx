@@ -1,8 +1,3 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-
 const languages = [
   {
     id: 1,
@@ -43,5 +38,18 @@ const languages = [
 ];
 
 export default function App() {
-  return <></>;
+  return (
+    <>
+      <h1 className="m-5">Learn Web Development</h1>
+      <div className="d-flex flex-container justify-content-evenly align-items-start m-5 ">
+        {languages.map((language, index) => {
+          return (
+            <div key={index} className="flex-item mx-2">
+              <button className="btn btn-primary">{language.title}</button>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
 }
