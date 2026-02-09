@@ -1,3 +1,5 @@
+import Button from './components/button';
+
 const languages = [
   {
     id: 1,
@@ -41,14 +43,8 @@ export default function App() {
   return (
     <>
       <h1 className="m-5">Learn Web Development</h1>
-      <div className="d-flex flex-container justify-content-evenly align-items-start m-5 ">
-        {languages.map((language, index) => {
-          return (
-            <div key={index} className="flex-item mx-2">
-              <button className="btn btn-primary">{language.title}</button>
-            </div>
-          );
-        })}
+      <div className="d-flex flex-container salign-items-start m-5 ">
+        <Button languages={languages} />
       </div>
     </>
   );
