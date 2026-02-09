@@ -43,12 +43,16 @@ const languages = [
 
 export default function App() {
   const [activeItem, setActiveItem] = useState(0);
+  console.log(activeItem);
   return (
     <>
       <h1 className="m-5">Learn Web Development</h1>
       <div className="d-flex flex-container align-items-start m-5 flex-container-direction">
         <div className="d-flex flex-item align-items-start">
-          <Button languages={languages} />
+          <Button
+            languages={languages}
+            toggleItem={(id) => setActiveItem(id)}
+          />
         </div>
         <div>
           <Paragraph languages={languages} />
